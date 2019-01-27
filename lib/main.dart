@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/view/LayoutDemo.dart';
+import 'package:flutter_app/view/ListFilePage.dart';
+import 'package:flutter_app/view/ListViewDemo.dart';
 import 'package:flutter_app/view/RandomWords.dart';
 
 void main() => runApp(new MyApp());
@@ -51,6 +54,54 @@ class HomePageState extends State<HomePage> {
           },
           child: Text(
             "RandomWords Demo",
+            textAlign: TextAlign.center,
+          ),
+        ),
+        RaisedButton(
+          padding: EdgeInsets.all(5),
+          onPressed: () {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
+                  return new LayoutDemo();
+                },
+              ),
+            );
+          },
+          child: Text(
+            "Layout Demo",
+            textAlign: TextAlign.center,
+          ),
+        ),
+        RaisedButton(
+          padding: EdgeInsets.all(5),
+          onPressed: () {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
+                  return new ListViewDemo();
+                },
+              ),
+            );
+          },
+          child: Text(
+            "ListView Demo",
+            textAlign: TextAlign.center,
+          ),
+        ),
+        RaisedButton(
+          padding: EdgeInsets.all(5),
+          onPressed: () {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
+                  return new ListFilePage();
+                },
+              ),
+            );
+          },
+          child: Text(
+            "File Demo",
             textAlign: TextAlign.center,
           ),
         ),
