@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/view/dio_demo.dart';
+import 'package:flutter_app/view/dismissible_demo.dart';
 import 'package:flutter_app/view/gesture_detector_demo.dart';
 import 'package:flutter_app/view/layout_demo1.dart';
 import 'package:flutter_app/view/layout_demo2.dart';
@@ -153,6 +154,22 @@ class HomePageState extends State<HomePage> {
           },
           child: Text(
             "GestureDetector Demo",
+            textAlign: TextAlign.center,
+          ),
+        ),
+        RaisedButton(
+          padding: EdgeInsets.all(5),
+          onPressed: () {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
+                  return new DismissibleDemo();
+                },
+              ),
+            );
+          },
+          child: Text(
+            "手势滑动删除 Demo",
             textAlign: TextAlign.center,
           ),
         ),
