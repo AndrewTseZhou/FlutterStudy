@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/utils/LayoutUtils.dart';
+import 'package:flutter_app/utils/layout_utils.dart';
 
 // TabBar
 var titles = ["Test1", "Test2", "Test3", "Test4"];

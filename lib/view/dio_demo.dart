@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/model/UserBean.dart';
-import 'package:flutter_app/utils/NetUtils.dart';
+import 'package:flutter_app/model/user_bean.dart';
+import 'package:flutter_app/utils/net_utils.dart';
 
 class DioDemo extends StatefulWidget {
   @override

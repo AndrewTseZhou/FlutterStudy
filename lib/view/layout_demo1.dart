@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/view/LayoutWidget.dart';
+import 'package:flutter_app/view/layout_widget.dart';
 
 class LayoutDemo extends StatefulWidget {
   @override

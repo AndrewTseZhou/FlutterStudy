@@ -1,6 +1,6 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/view/StarView.dart';
+import 'package:flutter_app/view/star_view.dart';
 
 class RandomWords extends StatefulWidget {
   @override

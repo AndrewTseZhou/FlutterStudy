@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/view/DioDemo.dart';
-import 'package:flutter_app/view/LayoutDemo.dart';
-import 'package:flutter_app/view/ListFilePage.dart';
-import 'package:flutter_app/view/ListViewDemo.dart';
-import 'package:flutter_app/view/RandomWords.dart';
-import 'package:flutter_app/view/layout_demo.dart';
+import 'package:flutter_app/view/dio_demo.dart';
+import 'package:flutter_app/view/layout_demo1.dart';
+import 'package:flutter_app/view/list_file_page.dart';
+import 'package:flutter_app/view/list_view_demo.dart';
+import 'package:flutter_app/view/random_words.dart';
+import 'package:flutter_app/view/layout_demo2.dart';
 
 void main() => runApp(new MyApp());
 
