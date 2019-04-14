@@ -4,6 +4,7 @@ import 'package:flutter_app/view/LayoutDemo.dart';
 import 'package:flutter_app/view/ListFilePage.dart';
 import 'package:flutter_app/view/ListViewDemo.dart';
 import 'package:flutter_app/view/RandomWords.dart';
+import 'package:flutter_app/view/layout_demo.dart';
 
 void main() => runApp(new MyApp());
 
@@ -119,6 +120,22 @@ class HomePageState extends State<HomePage> {
           },
           child: Text(
             "Dio Demo",
+            textAlign: TextAlign.center,
+          ),
+        ),
+        RaisedButton(
+          padding: EdgeInsets.all(5),
+          onPressed: () {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
+                  return new LayoutDemo2();
+                },
+              ),
+            );
+          },
+          child: Text(
+            "Layout Demo2",
             textAlign: TextAlign.center,
           ),
         ),
